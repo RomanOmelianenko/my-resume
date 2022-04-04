@@ -7,23 +7,30 @@ h1,
 h2,
 h3,
 h4,
-p {
+p,
+ul,
+ol {
   margin: 0;
 }
+
+/* img {
+  width: 100%;
+  height: 100%;
+} */
 
 .main-section {
   display: flex;
   flex-direction: row-reverse;
   width: 1200px;
   background-color: #fff;
-  margin: 40px auto;
+  margin: 20px auto;
   box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
 }
 
 /* Main content section */
 
 .main-content-section {
-  padding: 100px 90px;
+  padding: 60px 90px;
 }
 
 .main-content-title {
@@ -35,10 +42,16 @@ p {
   margin-bottom: 10px;
 }
 
+.education:not(:last-child) {
+  margin-bottom: 20px;
+}
+
 /* About me section */
 
-.about-me-section {
-  margin-bottom: 40px;
+.about-me-section,
+.projects-section,
+.work-experience-section {
+  margin-bottom: 30px;
 }
 
 .about-me-profession {
@@ -47,7 +60,7 @@ p {
   font-size: 14px;
   line-height: 17px;
   color: #000000;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .about-me-name {
@@ -56,11 +69,11 @@ p {
   font-size: 45px;
   line-height: 55px;
   color: #000000;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .about-me-description {
-  width: 400px;
+  /* width: 400px; */
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -70,8 +83,13 @@ p {
 
 /* My projects section */
 
-.projects-section {
-  margin-bottom: 50px;
+/* .projects-section {
+  margin-bottom: 40px;
+} */
+
+h4 {
+  color: #000;
+  font-size: 16px;
 }
 
 .my-projects-list {
@@ -93,6 +111,7 @@ p {
 }
 
 .my-projects-link {
+  display: block;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -112,7 +131,10 @@ p {
 /* My work experience */
 
 .my-work-experience-company {
+  display: inline-block;
   color: #fb6d3a;
+  font-weight: bold;
+  margin-bottom: 15px;
 }
 
 .my-work-experience-position {
@@ -129,6 +151,9 @@ p {
   font-size: 12px;
   line-height: 15px;
   color: #a8a8a8;
+}
+
+.my-work-experience-period:not(:last-child) {
   margin-bottom: 10px;
 }
 
@@ -149,14 +174,18 @@ p {
 }
 
 .my-work-experience-company-block {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
-.work-experience-section {
+/* .work-experience-section {
   margin-bottom: 40px;
-}
+} */
 
 /* Education section */
+.education,
+.additional-education {
+  margin-bottom: 30px;
+}
 
 .education-university {
   color: #fb6d3a;
@@ -173,6 +202,11 @@ p {
 }
 
 /* Sidebar section */
+/* .sidebar-section img {
+  width: 354px;
+  height: 370px;
+  object-fit: cover;
+} */
 
 .sidebar-section {
   background-color: #1e2939;
@@ -183,6 +217,15 @@ p {
 .contacts-section,
 .tech-skills-section {
   margin: 50px 0 0 40px;
+}
+
+.sidebar-section-photo {
+  width: 370px;
+  height: 600px;
+  background-image: url('../img/4.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .sidebar-title {
@@ -204,7 +247,8 @@ p {
   margin-right: 8px;
 }
 
-.contacts-section-link {
+.contacts-section-link,
+.contacts-section-link-git {
   color: #8e949c;
   font-weight: normal;
   font-size: 16px;
@@ -212,8 +256,8 @@ p {
   text-decoration: none;
 }
 
-.phone {
-  text-decoration: none;
+.contacts-section-link-git {
+  font-size: 14px;
 }
 
 /* Skills sections */
