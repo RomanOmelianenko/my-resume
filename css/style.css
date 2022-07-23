@@ -215,8 +215,10 @@ h4 {
 }
 
 .contacts-section,
-.tech-skills-section {
-  margin: 50px 0 0 40px;
+.tech-skills-section,
+.soft-skills-section {
+  margin-bottom: 40px;
+  margin-left: 50px;
 }
 
 .sidebar-section-photo {
@@ -226,6 +228,7 @@ h4 {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  margin-bottom: 40px;
 }
 
 .sidebar-title {
@@ -262,9 +265,9 @@ h4 {
 
 /* Skills sections */
 
-.soft-skills-section {
-  margin: 45px 0 0 40px;
-}
+/* .soft-skills-section {
+  margin-bottom: 40px;
+} */
 
 .skills-list {
   padding: 0;

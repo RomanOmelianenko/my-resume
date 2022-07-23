@@ -1,0 +1,42 @@
+@media (max-width: 768px) {
+  .main-section {
+    /* display: flex; */
+    /* width: 100%; */
+    margin: 0 auto;
+    flex-direction: column-reverse;
+  }
+
+  .sidebar-section {
+    width: 95%;
+    margin: 0 auto;
+    min-width: 370px;
+  }
+
+  .sidebar-section-photo {
+    margin: 0 auto;
+    /* width: 30%; */
+    /* height: 600px; */
+    margin-bottom: 40px;
+  }
+
+  .sidebar-section-block {
+    width: 370px;
+    /* text-align: center; */
+    margin: 0 auto;
+  }
+
+  /* .sidebar-section-block:not(:last-child) {
+    margin-bottom: 20px;
+  } */
+
+  .contacts-section,
+  .tech-skills-section,
+  .soft-skills-section {
+    margin: 0;
+  }
+
+  .contacts-section,
+  .tech-skills-section {
+    margin-bottom: 40px;
+  }
+}
